@@ -18,7 +18,7 @@ export default class Ex_OF_LDS extends LightningElement {
     outputFunction({ data, error }){
         if (data) {
             console.log('data ', data);
-            //this.conName = data.fields.Name.value;
+            //this.conName = data.fields.Name.value; // this is only fetch only one field value
             //this.conPhone = data.fields.Phone.value;
             this.conName = getFieldValue(data, CONTACT_NAME);
             this.conPhone = getFieldValue(data, CONTACT_PHONE);
