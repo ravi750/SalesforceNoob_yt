@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 
 export default class LwcRefsDemo extends LightningElement {
+    // this is salesforce noob 50th videos
 
     handleChanges(){
         let para = this.refs.myText;
