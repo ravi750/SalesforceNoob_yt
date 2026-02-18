@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Get Object Info" icon-name="custom:custom14"></lightning-card>
+    <template lwc:if={contactinfo}>
+        <div class="slds-var-p-around_small">
+            <p>Contact API Name : {contactinfo.apiName}</p>
+            <p>Contact API Name plural : {contactinfo.labelPlural}</p>
+        </div>
+        <div class="slds-var-p-around_small">
+            <p>Relationships of Account</p>
+            <template for:each={contactinfo.childRelationships} for:item="child">
+                <p key={child.childObjectApiName}>{child.childObjectApiName}</p>
+            </template>
+        </div>
+    </template>
+    <template lwc:elseif={contacterror}><p>error message check in console</p></template>
+</template>
