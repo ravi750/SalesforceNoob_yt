@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="LDS Demo : deleteRecord">
+        <lightning-input label="Id" onchange={handleRecordId}></lightning-input>
+        <div class="slds-m-around_medium">
+            <!--<template if:true={}></template>-->
+                <p>Id : {accountId}</p>
+                <p><strong>Account Name:</strong>{accountName}</p>
+                <p>Industry: {industry}</p>
+                <p>Phone: {phone}</p>
+                <!--<p>Owner: {owner}</p>-->
+        </div>
+
+        <lightning-button label="Delete Record" variant="destructive" onclick={handleDeleteRecord}></lightning-button>
+    </lightning-card>
+</template>
